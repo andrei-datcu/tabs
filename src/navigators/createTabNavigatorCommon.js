@@ -24,6 +24,8 @@ type State = {
   loaded: number[],
 };
 
+export default function(containerStyle) {
+
 class TabNavigationView extends React.PureComponent<Props, State> {
   static defaultProps = {
     lazy: true,
@@ -137,10 +139,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     overflow: 'hidden',
+    ...containerStyle
   },
   pages: {
     flex: 1,
   },
 });
 
-export default createTabNavigator(TabNavigationView);
+return createTabNavigator(TabNavigationView);
+}

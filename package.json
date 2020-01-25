@@ -1,5 +1,5 @@
 {
-  "name": "react-navigation-tabs",
+  "name": "@adatcu/react-navigation-tabs",
   "version": "1.2.0",
   "description": "Tab Navigation components for React Navigation",
   "main": "src/index.js",
